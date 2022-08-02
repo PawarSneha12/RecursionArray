@@ -173,6 +173,51 @@ public static void main(String[] args){
 
 Questions .5
 
-//
+//  Fibbo Series Using Recursion
+class FibboSeries
+{
+    public static void main(String[]args){
+
+        int ans=fibbo(4);
+        System.out.println(ans);
+    }
+    
+    static int fibbo(int n){
+
+        if(n<2){
+            return n;
+        }
+        return fibbo(n-1)+fibbo(n-2);
+    }
+}
+
+------------------------------
+
+questions 6.
+
+//count zero in given numbers
+
+-->
+public class CountZeros {
+    public static void main(String[] args){
+        int ans =count(10090400);
+        System.out.println(ans);
+    }
+    static int count(int n){
+        return helper(n,0);
+    }
+    private static int helper(int n,int c){
+        if(n==0){
+            return c;
+        }
+       int rem=n%10;
+       if(rem==0){
+        return helper(n/10,c+1);
+       }
+       return helper(n/10,c);}}
+
+-----------------------------
+
+
 
     
