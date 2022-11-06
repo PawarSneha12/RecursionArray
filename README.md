@@ -94,6 +94,41 @@ public class SumOFDigit {
        return n+SUMN(n-1);
 }}
 
+3. sum of digits 
+
+public class SumOfDigits {
+    public static void main(String[] args){
+        int ans=sumOfDgs(13450);
+        System.out.println(ans);
+
+    }
+    public static int sumOfDgs(int n){
+        if(n==0){
+            return 0;
+        }
+        return (n%10)+sumOfDgs(n/10);
+    }
+    
+}
+
+
+
+question 3.1: product of digits
+
+public class SumOfDigits {
+    public static void main(String[] args){
+        int ans=sumOfDgs(1345);
+        System.out.println(ans);
+
+    }
+    public static int sumOfDgs(int n){
+        if(n%10==n){
+            return n;
+        }
+        return (n%10)*sumOfDgs(n/10);
+    }
+    
+}
 
 
 ----------------------------
