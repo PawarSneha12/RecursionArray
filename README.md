@@ -147,7 +147,9 @@ public class ReverseNum {
             sum=sum*10+rem;
             Rev(n/10);
 
-           }  //second way by bit or helper function
+           }  
+           
+           //second way by bit or helper function
     static int Rev1(int n){
           int digits=(int)(Math.log10(n)+1);
 return helper(n, digits);
